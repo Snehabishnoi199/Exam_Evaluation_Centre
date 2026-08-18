@@ -1,0 +1,186 @@
+<script>
+    alert("Welcome Sir")
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- <form action="/check/byid" method="post">
+        <input type="search" name="search" placeholder="search Packet">
+        <input type="submit" >
+    </form>
+    <hr>
+    <form action="/check/alloted" method="post">
+        <input type="submit" name="Check Allotement">Allotted
+    </form>
+    <hr>
+    <form action="/check/notalloted" method="post">
+        <input type="submit" name="Check remaining" placeholder="remaining">remaining
+    </form>
+    <hr>
+    <form action="/check/checked" method="post">
+        <input type="submit" name="Check remaining" placeholder="remaining">Checked
+    </form>
+    <hr>
+    <form action="/check/notchecked" method="post">
+        <input type="submit" name="Check remaining" placeholder="remaining"> Non Checked
+    </form>
+    <hr>
+    <br>
+     
+    <h1>Packet Add On </h1>
+    <form action="/addpacket" method="post">
+        <input type="text" name="PacketNo" placeholder="packet no">
+        <input type="text" name="NoofSheet" placeholder="No of sheet">
+        <input type="text" name="Source" placeholder="source">
+        <input type="text" name="Destination" placeholder="destination">
+        <input type="date" name="Date" placeholder="date">
+        <input type="time" name="Time" placeholder="time">
+        <input type="text" name="type" placeholder="Regular/REapear">
+        
+        <input type="text" name="Shift" placeholder="Shift">
+        <input type="text" name="Semester" placeholder="semester">
+        <input type="text" name="Subject" placeholder="Subject">
+        <input type="submit" >
+
+    </form>
+    <form action="/check" method="get">
+        <input type="submit" value="Check Packet">
+    </form>
+    <hr>
+    <h1>Teacher Allocation</h1>
+    <form action="/packetallocate" method="post">
+
+        <input type="text" name="PacketNo" placeholder="packet no">
+        <input type="text" name="TeacherId" placeholder="TeacherID">
+        <input type="text" name="AllotBy" placeholder="AllotBy">     
+        <input type="date" name="Date" placeholder="date">
+        <input type="time" name="Time" placeholder="time">
+        <input type="number" name="NoofSheet" placeholder="No Of Sheet">        
+        <input type="text" name="Semester" placeholder="semester">
+        <input type="text" name="Subject" placeholder="Subject">
+        
+        <input type="submit" >
+
+    </form>
+
+    <h1>Revieve From Teacher </h1>
+    <form action="/recievePacket" method="post">
+
+        <input type="text" name="PacketNo" placeholder="packet no">
+        <input type="text" name="TeacherId" placeholder="TeacherID">
+        <input type="text" name="NoofSheet" placeholder="No of sheet"> 
+        <input type="text" name="RecieveBy" placeholder="AllotBy"> 
+        <input type="text" name="RecieveFrom" placeholder="AllotTo">     
+        <input type="date" name="Date" placeholder="date">
+        <input type="time" name="Time" placeholder="time">
+              
+        <input type="submit">
+
+    </form>
+    <h1>Bill</h1>
+    <form action="/bill" method="post">
+        <input type="text" name="id" >
+        <input type="submit" name="submit" id="">
+    </form>
+    <h1>Teacher Registeration</h1>
+    <form action="/teacherregister" method="post">
+        <input type="text" name="Id" placeholder="TeacherID">
+        <input type="text" name="Name" placeholder="Name">
+        <input type="text" name="Qualification" placeholder="Qualification">
+        <input type="text" name="Position" placeholder="Position">
+
+        <input type="submit">
+    </form> -->
+
+    <!--Main layout-->
+
+
+    <header class="container-fluid tbdr t_header  m-0 p-0 d-flex align-items-center space-between">
+
+        <nav class="navbar w-100">
+            <a class="navbar-brand text-white">TMC</a>
+            <h1 class="text-white">Table Marking Centre</h1>
+            <form class="d-flex " role="search" action="/bill" method="post" >
+                <input class="form-control me-3 " type="text" placeholder="Enter Teacher Id For bill" aria-label="Search" name="id">
+                <button class="btn btn-outline nav_search me-1" type="submit">Submit</button>
+            </form>
+
+        </nav>
+    </header>
+
+    <div class="main row tbdr t_main container-fluid m-0 p-0">
+        <div class="col-2 tbdre d-flex flex-column ">
+            <a href="/check" class="text-center sidebar ">
+                    <div class=" tbdr text-center text-white">
+                    Show All Packet
+                    </div>   
+            </a>     
+            <div class="sidebar tbdr text-center"><a href="/admin/bill" class="text-center  text-white pt-2">Bill Generate</a></div>
+            <button class="btn btn-outline-primary logout" type="submit"> Logout </button>
+        </div>
+        <div class="col-10 tbdr d-flex flex-wrap space-between">
+            <div class="mainsection row m-0 ">
+                <div class="col-6 child d-flex justify-content-center align-items-center halfL">
+                    <h4>Add Packet, <br> Come from Outside</h4>
+                </div>
+                <div class="col-6 ">
+                    <form action="/admin/addpacket">
+
+                        <input type="Submit" class="btn btn-outline click" placeholder="Go">
+                    </form>
+                </div>
+            </div>
+            <div class=" ms-3 mainsection row m-0">
+                <div class="col-6 child d-flex justify-content-center align-items-center halfL">
+                    <h4>Allocate, <br>Packet To Teacher</h4>
+                </div>
+                <div class="col-6 ">
+                    <form action="/admin/allocatepacket" method="get">
+                        <input type="submit" class="btn btn-outline click ">
+
+                    </form>
+                </div>
+            </div>
+            <div class="mainsection row m-0">
+                <div class="col-6 child d-flex justify-content-center align-items-center halfL">
+                    <h4>Add <br> Teacher Detail</h4>
+                </div>
+                <div class="col-6">
+                    <img src="../public/images/arrow.png" alt="">
+                    <form action="/admin/teacherdetail" method="get">
+                        <input type="submit" class="btn btn-outline click ">
+
+                    </form>
+                </div>
+            </div>
+            <div class="mainsection row m-0 ms-3">
+                <div class="col-6 child d-flex justify-content-center align-items-center halfL">
+                    <h4>Recieve Packet <br> From Teacher</h4>
+                </div>
+                <div class="col-6">
+                    <img src="../public/images/arrow.png" alt="">
+                    <form action="/admin/recivepacket" method="get">
+                        <input type="submit" class="btn btn-outline click ">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

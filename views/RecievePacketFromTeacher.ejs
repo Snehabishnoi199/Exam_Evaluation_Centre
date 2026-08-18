@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo2.png" type="icon/png">
+    <title>Recieved Packets</title>
+    <link rel="stylesheet" href="/css/RecievePacketFromTeacher.css">
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav>
+        <div class="logo">
+            <div class="img">
+            </div>
+        </div>
+        <div class="nav-content">
+            
+            
+            <!-- <img src="chatbox-ellipses-outline.svg" alt="" class="message"> -->
+            <div class="profile">
+                <img src="/images/person-outline.svg" alt="" class="user-icon">
+                <span class="user-id"><span class="user-text"> Administer </span><img src="/images/chevron-down-outline.svg"
+                        alt="" class="arrow"></span>
+                <ul class="profile-box">
+                    <li class="profile-item"> <img src="/images/person-outline.svg" alt="" class="icon"></li>
+                    <li class="profile-item">Edit Profile</li>
+                    <li class="profile-item">Change Password</li>
+                    <li class="profile-item">Logout</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Body -->
+    <main>
+        <div class="background"><img src="/images/1.jpg" alt="" class="background back2"></div>
+        <input type="checkbox" name="" id="active">
+        <label for="active">
+            <img src="/images/menu-outline.svg" alt="Network Problem" class="menu">
+        </label>
+
+        <div class="sidebar">
+
+            <ul class="side-cont">
+
+                <li class="side-item">
+                    <img src="/images/grid-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="/admin/adminhome">Dashboard</a></p>
+                </li>
+                <li class="side-item">
+                    <img src="/images/person-add-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="/admin/teacherdetail">Enter Teacher Detail</a></p>
+                </li>
+                
+                <li class="side-item">
+                    <img src="/images/return-down-back-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="/admin/addpacket">Add Packet Come From Outside</a></p>
+                </li>
+                <li class="side-item">
+                    <img src="/images/return-down-back-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="/admin/allocatepacket">Allocate Packet To Teacher</a></p>
+                </li>
+                
+                <li class="side-item">
+                    <img src="/images/swap-vertical-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="/check">Show Data</a></p>
+                </li>
+                <li class="side-item">
+                    <img src="/images/receipt-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="">Bill Generate</a></p>
+                </li>
+
+            </ul>
+            <div class="logout">
+                <img src="/images/log-in-outline.svg" alt="" class="logout-icon">
+                <p class="logout-text"><a href="/admin/logout">logout</a></p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+
+                <div><img src="/images/return-down-back-outline.svg" alt="not found" class="main-cont"></div>
+                <h1 class="heading">Recieved Packet From Teacher</h1>
+
+                <form action="/recievePacket" method="post">
+                    <div class="input-position">
+                        <label for="packet" class="label-txt">Enter Packet No.</label>
+                        <input type="number" name="PacketNo" id="packet" class="inputs" placeholder="Enter Packet No." required>
+                    </div>
+                  
+                    <div class="input-position">
+                        <label for="Recieved" class="label-txt">Recieved By</label>
+                        <input type="text" name="RecieveBy" id="Recieved" class="inputs" placeholder="Recieved By" required>
+                    </div>
+
+                    <!-- <div class="input-position">
+                        <label for="t-id" class="label-txt">Enter Teacher Id</label>
+                        <input type="number" name="Date" id="t-id" class="inputs" placeholder="Enter Teacher Id" required>
+                    </div> -->
+
+                    <div class="input-position">
+                        <label for="date" class="label-txt">Date</label>
+                        <input type="date" name="Date" id="date" class="inputs" required>
+                    </div>
+
+                
+
+                    <div class="button-group">
+                        <input type="submit" value="Submit" class="button">
+                        <input type="reset" value="Reset" class="button">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

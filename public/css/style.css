@@ -1,0 +1,118 @@
+/*  Hello World Guys*/
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.t_header{
+  height: 70px;
+  background: #274C77;
+
+  
+}
+.tbdre{
+  border-right: 3px solid black;
+}
+.icon{
+  background: url("C:\Users\ParveshSoni\Desktop\Project Image.png");
+}
+.t_main{
+  min-height: 500px;
+ }
+.sidebar{
+  height: 50px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #3f729b;
+  border-radius: 10px;
+}
+.nav_search{
+  background-color: #464545;
+  color: white;
+  border: 2px solid white;
+}
+
+.nav_search:hover{
+  background-color: #8b8b8b;
+}
+.mainsection{
+  /* Rectangle 11 */
+
+
+width: 500px;
+height: 200px;
+left: 63px;
+top: 44px;
+margin-top: 1rem !important;
+margin: 1rem 0 0 35px !important;
+
+background: #69a7c0;
+border-radius: 32px;
+
+}
+.child{
+  background-color: #928E8E;
+  color: white;
+  border-top-left-radius: 31px;
+  border-bottom-left-radius: 21px;
+
+}
+.arow{
+  /* Line 1 */
+
+
+width: 89px;
+height: 0px;
+
+
+border: 5px solid #000000;
+transform: rotate(0.01deg);
+
+}
+.arowSign{
+  /* Polygon 1 */
+
+position: absolute;
+width: 67px;
+height: 54px;
+left: 602px;
+top: 103px;
+
+background: #110F0F;
+transform: rotate(90deg);
+
+
+}
+.click{
+  position: relative;
+  width: 100px;
+  top: 6rem;
+  left: 60px;
+  background-color: #464645;
+  color: white;
+  border: 3px solid black;
+  
+
+}
+
+.click:hover{
+  color: white;
+  background-color: #858484;
+}
+a{
+  text-decoration: none;
+}
+.halfL{
+  background-color: #3f729b;
+}
+body{
+  background-color:rgb(240, 230, 230) ;
+}
+.logout{
+  margin-top: 15rem;
+  background-color:#464545 ;
+  color: white;
+  border: 2px solid black;
+}
+
+
+
+

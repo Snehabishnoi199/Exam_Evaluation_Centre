@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo2.png" type="icon/png">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/adminPanel.css">
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav>
+        <div class="logo">
+            <div class="img">
+            </div>
+            <div class="title">
+                <input type="checkbox" name="search-icon" id="search-icon">
+            </div>
+        </div>
+        <div class="nav-content">
+            
+            <div class="profile">
+                <img src="/images/person-outline.svg" alt="" class="user-icon">
+                <span class="user-id"><span class="user-text"> Administer </span><img src="/images/chevron-down-outline.svg"
+                alt="" class="arrow"></span>
+                <ul class="profile-box">
+                    <li class="profile-item"> <img src="/images/person-outline.svg" alt="" class="icon"></li>
+                    <li class="profile-item">Edit Profile</li>
+                    <li class="profile-item">Change Password</li>
+                    <li class="profile-item">Logout</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Body -->
+    <main>
+        <div class="background"><img src="/images/1.jpg" alt="" class="background back2"></div>
+        <input type="checkbox" name="" id="active">
+        <label for="active">
+            <img src="/images/menu-outline.svg" alt="Network Problem" class="menu">
+        </label>
+
+        <div class="sidebar">
+
+            <ul class="side-cont">
+
+                <li class="side-item">
+                    <img src="/images/grid-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="/admin/adminhome">Dashboard</a></p>
+                </li>
+                <!-- <li class="side-item">
+                    <img src="/images/person-add-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="">Enter Teacher Detail</a></p>
+                </li>
+                <li class="side-item">
+                    <img src="/images/return-up-forward-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="">Allocate Packet Allocate Packet</a></p>
+                </li>
+                <li class="side-item">
+                    <img src="/images/return-down-back-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="">Recieve Packet</a></p>
+                </li> -->
+            
+                <li class="side-item">
+                    <img src="/images/checkmark-done-outline.svg" alt="" class="dashboard">
+                    <a href="/check"> <p class="side-text">Show All Data</p></a>
+                </li>
+                
+                <li class="side-item">
+                    <img src="/images/receipt-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="/admin/billui">Bill Generate</a></p>
+                </li>
+                <li class="side-item">
+                    <img src="/images/receipt-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="/check/teacher">Teacher Data Show</a></p>
+                </li>
+
+            </ul>
+            <div class="logout">
+                <img src="/images/log-in-outline.svg" alt="" class="logout-icon">
+                <p class="logout-text"><a href="/admin/logout">logout</a></p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+
+                <div class="sub">
+                    <h1 class="sub-text">Add Packet Come From Outside
+                        <span>
+                            <form action="/admin/addpacket" >
+                                <button class="button-1" type="submit">OK</button>
+                            </form>     
+                        </span>
+                    </h1>
+                    <span class="img-sub">
+                        <img src="/images/add-pac.svg" alt="" class="add-pac">
+                    </span>
+                </div>
+
+
+                <div class="sub">
+                    <span class="img-sub">
+                        <img src="/images/teacher.svg" alt="" class="add-pac">
+                    </span>
+                    <h1 class="sub-text">Add Teacher Detail
+                        <span>
+                            <form action="/admin/teacherdetail" >
+                                <button class="button-1" type="submit">OK</button>
+                            </form>     
+                        </span>
+                    </h1>
+                </div>
+
+
+                <div class="sub">
+                    <h1 class="sub-text">Allocate Packet to Teacher
+                        <span>
+                            <form action="/admin/allocatepacket" >
+                                <button class="button-1" type="submit">OK</button>
+                            </form>     
+                        </span>
+                    </h1>
+                    <span class="img-sub">
+                        <img src="/images/teacherallocate.svg" alt="" class="add-pac">
+                    </span>
+                </div>
+
+
+                <div class="sub">
+                    <span class="img-sub">
+                        <img src="/images/recieved.svg" alt="" class="add-pac">
+                    </span>
+                    <h1 class="sub-text">Recieve Packet From Teacher
+                        <span>
+                            <form action="/admin/recivepacket" >
+                                <button class="button-1" type="submit">OK</button>
+                            </form>     
+                        </span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>

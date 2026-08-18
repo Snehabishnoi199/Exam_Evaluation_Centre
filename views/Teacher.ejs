@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo2.png" type="icon/png">
+    <title>Add Teacher Details</title>
+    <link rel="stylesheet" href="/css/TeacherDetail.css">
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav>
+        <div class="logo">
+            <div class="img">
+            </div>
+            <div class="title">
+               
+            </div>
+        </div>
+        <div class="nav-content">
+            
+            <!-- <img src="chatbox-ellipses-outline.svg" alt="" class="message"> -->
+            <div class="profile">
+                <img src="/images/person-outline.svg" alt="" class="user-icon">
+                <span class="user-id"><span class="user-text"> Administer </span><img src="/images/chevron-down-outline.svg"
+                        alt="" class="arrow"></span>
+                <ul class="profile-box">
+                    <li class="profile-item"> <img src="/images/person-outline.svg" alt="" class="icon"></li>
+                    <li class="profile-item">Edit Profile</li>
+                    <li class="profile-item">Change Password</li>
+                    <li class="profile-item">Logout</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Body -->
+    <main>
+        <div class="background"><img src="/images/1.jpg" alt="" class="background back2"></div>
+        <input type="checkbox" name="" id="active">
+        <label for="active">
+            <img src="/images/menu-outline.svg" alt="Network Problem" class="menu">
+        </label>
+
+        <div class="sidebar">
+
+            <ul class="side-cont">
+
+                <li class="side-item">
+                    <img src="/images/grid-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="/admin/adminhome">Dashboard</a></p>
+                </li>
+                
+                <li class="side-item">
+                    <img src="/images/return-up-forward-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="/admin/allocatepacket">Allocate Packet Allocate Packet</a></p>
+                </li>
+                <li class="side-item">
+                    <img src="/images/return-down-back-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="/admin/addpacket">Add Packet Come From Outside</a></p>
+                </li>
+                <li class="side-item">
+                    <img src="/images/checkmark-done-outline.svg" alt="" class="dashboard">
+                    <a href="/check"> <p class="side-text">Show All Data</p></a>
+                </li>
+
+                <li class="side-item">
+                    <img src="/images/receipt-outline.svg" alt="" class="dashboard">
+                    <p class="side-text"><a href="">Bill Generate</a></p>
+                </li>
+
+            </ul>
+            <div class="logout">
+                <img src="/images/log-in-outline.svg" alt="" class="logout-icon">
+                <p class="logout-text"><a href="/admin/logout">logout</a></p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <div class="container">
+
+                <div><img src="/images/person-add-outline.svg" alt="not found" class="main-cont"></div>
+                <h1 class="heading">Add Teacher Details</h1>
+
+                <form action="/teacherregister" method="post">
+                    <div class="input-position">
+                        <label for="allocate" class="label-txt">Allocated Id</label>
+                        <input type="text"  name="Id" id="allocate" class="inputs" placeholder="Allocate Id" required>
+                    </div>
+                    <div class="input-position">
+                        <label for="t-name" class="label-txt">Name</label>
+                        <input type="text" name="Name" id="t-name" placeholder="Enter your Name"
+                            class="inputs" required>
+                    </div>
+                    <div class="input-position">
+                        <label for="qualification" class="label-txt">Enter Qualification</label>
+                        <input type="text" name="Qualification" id="qualification" class="inputs" placeholder="Enter your Qualification" required>
+                    </div>
+                    <div class="input-position">
+                        <label for="position" class="label-txt">Enter Position</label>
+                        <input type="text" name="Position" id="position" class="inputs" placeholder="Enter your Position" required>
+                    </div>
+                    
+                    <div class="button-group">
+                        <input type="submit" value="Submit" class="button">
+                        <input type="reset" value="Reset" class="button">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
